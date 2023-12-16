@@ -38,7 +38,7 @@ function updateProfile() {
         headers: {
             'Content-Type': 'application/x-www-form-urlencoded',
         },
-        body: 'name=${encodeURIComponent(name)}&age=${encodeURIComponent(age)}&dob=${encodeURIComponent(dob)}&contact=${encodeURIComponent(contact)}',})
+        body: `name=${encodeURIComponent(name)}&age=${encodeURIComponent(age)}&dob=${encodeURIComponent(dob)}&contact=${encodeURIComponent(contact)}`,})
     .then(response => response.text())
     .then(data => {
         // After a successful update, toggle back to the profile display

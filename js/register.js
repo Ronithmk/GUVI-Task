@@ -7,7 +7,7 @@ function registerUser() {
         headers: {
             'Content-Type': 'application/x-www-form-urlencoded',
         },
-        body:'new-username=${encodeURIComponent(username)}&new-password=${encodeURIComponent(password)}',})
+        body:`new-username=${encodeURIComponent(username)}&new-password=${encodeURIComponent(password)}`,})
         .then(response => response.text())
         .then(data => {
             console.log(data); // Log the response from the server
