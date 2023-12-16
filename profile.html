@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="./css/profile.css">
+</head>
+<body>
+    <div class="profile-container">
+        <h1>User Profile</h1>
+
+        <div id="profile-details">
+            <!-- User details will be displayed here dynamically -->
+        </div>
+
+        <!-- Update Profile Form -->
+        <form id="update-profile-form" style="display: none;">
+            <label for="name">Name:</label>
+            <input type="text" id="name-input" name="name" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age-input" name="age" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob-input" name="dob" required>
+
+            <label for="contact">Contact:</label>
+            <input type="text" id="contact-input" name="contact" required>
+
+            <button type="button" onclick="updateProfile()">Update Profile</button>
+        </form>
+
+        <a href="logout.php">Logout</a>
+
+        <script src="./js/profile.js"></script>
+    </div>
+</body>
+</html>
